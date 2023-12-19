@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manjunatha Banda | Portfolio</title>
+    <!--CSS Files-->
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="colors.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="dark-mode.css">
+  </head>
+  <body>
+    <!-- Dark mode switcher -->
+<div class="dark-mode-switcher">
+  <input type="checkbox" id="dark-mode-toggle" />
+  <label for="dark-mode-toggle"></label>
+</div>
+
+<!-- JavaScript for dark mode switcher -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const darkModeToggle = document.getElementById('dark-mode-toggle');
+  const body = document.body;
+
+  darkModeToggle.addEventListener('change', function () {
+    if (darkModeToggle.checked) {
+      body.classList.add('dark-mode');
+    } else {
+      body.classList.remove('dark-mode');
+    }
+  });
+});
+
+</script>
+    <!--Our Content Starts-->
+    <div class="main-container">
+      <div class="aside">
+        <div class="logo">
+          <a href="#"><span>W</span>elcome</a>
+        </div>
+        <ul class="nav">
+          <li>
+            <a href="#"><button><i class="fa-solid fa-user  home-link"></i>Home</button><a href="#"></a>
+          </li>
+          
+          <li>
+            <a href="#education"
+              ><button><i class="fa-solid fa-graduation-cap"></i>Education</button></a>
+          </li>
+          <li>
+            <a href="#skills"><button><i class="fa fa-list  skill-link"></i>Skills</button></a>
+          </li>
+          <li>
+            <a href="#projects"><button><i class="fa fa-briefcase  projects-link"></i>Projects</button></a>
+          </li>
+          <li>
+            <a href="#contact"><button><i class="fa-solid fa-phone contact-link"></i>Contact</button></a>
+          </li>
+        </ul>
+      </div>
+      <!--  Main Content  -->
+      <div class="main-content">
+        <!-- Start Home Section   -->
+        <div class="home section hidden">
+          <div class="container">
+            <div class="row-1">
+              <div class="home-info">
+                <h3 class="hello">
+                  Hi! I'm <span> Manjunatha Banda</span>
+                </h3>
+                <h3 class="my-profession">
+                   <span>W</span>eb Developer
+                </h3>
+                <p>
+                  I'm Manjunatha Banda, a recent graduate with a passion for software development. Proficient in Html, CSS, Javascript, React, MySQL, Git and Github. I aspire to contribute to innovative projects and be a part of the dynamic tech industry. Eager to learn and adapt, I'm excited about the potential of technology to drive positive change. Let's connect and build something amazing together!
+                </p>
+                <button><a href="#contact" class="btn hire-me">Hire Me</a></button>
+              </div>
+              <div class="home-img padd-15">
+                <img src="images/my-image.jpg" alt="Photo" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Home Section -->        
+        <!--  Education section starts  -->
+        <div class="section education">
+          <div class="container">
+            <div class="row-2">
+              <div class="titile">
+                <h2 id="education">Education</h2>
+              </div>
+              <div class="ed-details">
+                <div class="degree">
+                  <ul>
+                    <li>Bachelor of Technology in Civil Engineering</li>
+                  </ul>
+                  <p>AP IIIT Ragiv Gandhi Universisty of Knowledge Technologies RK VALLEY - Kadapa Dist., India</p>
+                 
+                  <p>CGPA - 7.65/10.0</p>
+                  <p class="year"><i class="fa-solid fa-calendar"></i>2019-2023</p>
+                </div>
+                <div class="degree">
+                  <ul>
+                    <li>Pre University Course in M.P.C</li>
+                  </ul>
+                  <p>AP IIIT Ragiv Gandhi Universisty of Knowledge Technologies RK VALLEY - Kadapa Dist., India</p>
+                 
+                  <p><i class="fa-solid fa-calendar"></i>CGPA - 7.65/10.0</p>
+                  <p>2017-2019</p>
+                </div>
+                <div class="degree">
+                  <ul>
+                    <li>SSC</li>
+                  </ul>
+                  <p>Kallimatam Municipal High School - Rayadurg, India</p>
+                </p>
+                <p><i class="fa-solid fa-calendar"></i>CGPA - 9.7/10.0</p>
+                <p>2017</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--   End of education.  -->
+        <!--   Skill section starts  -->
+        <div class="section skills">
+          <div class="container">
+            
+            <div class="row-2">
+              <div class="titile">
+                <h2 id="skills">Skills</h2>
+              </div>
+              <div class="skill-container">
+                <div class="skill"><i class="fa-brands fa-html5"></i><P>Html</P></div>
+                <div class="skill"><i class="fa-brands fa-css3-alt"></i><p>CSS</p></div>
+                <div class="skill"><i class="fa-brands fa-js"></i><p>JavaScript</p></div>
+                <div class="skill"><i class="fa-brands fa-react"></i><p>React</p></div>
+                <div class="skill"><i class="fa-brands fa-bootstrap"></i><p>Bootstrap</p></div>
+                <div class="skill"><i class="fa-solid fa-database"></i><p>MySQL</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--   End of Skill section  .-->
+        <!--  Projects section starts -->
+        <div class="section projects">
+          <div class="container">
+            
+            <div class="row-2">
+              <div class="titile">
+                <h2 id="projects">Projects</h2>
+              </div>
+              <div class="project-1">
+                <ul>
+                  <li><i class="fa-brands fa-amazon"></i>Amazon Clone</li>
+                </ul>
+                <p>Successfully built an Amazon clone website using HTML and CSS, showcasing mastery in front-end development. Proven ability to create visually appealing and responsive web experiences.</p>
+              </p>             
+              </div>
+              <div class="project-2">
+                <ul>
+                  <li><i class="fa-solid fa-briefcase"></i>Portfolio</li>
+                </ul>
+                <p>Proficient web developer with expertise in HTML, CSS, and JavaScript. Successfully built a dynamic personal portfolio, demonstrating a passion for creating engaging and interactive web experiences.</p>
+              </p>             
+              </div>
+              <div class="project-2">
+                <ul>
+                  <li><i class="fa-solid fa-briefcase"></i>Calculator</li>
+                </ul>
+                <p>Developed a dynamic React project— a feature-rich calculator with a modern user interface, supporting standard arithmetic operations and providing a seamless user experience, showcasing proficiency in front-end development and React.js.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  End of project section  -->
+        <!--  Contact section starts  -->
+        <div class="section contact">
+          <div class="container">
+            <div class="row-4">
+              <div class="titile">
+                <h2 id="contact">Contact</h2>
+              </div>
+              <div class="addres">
+                <div class="mobile">
+                  <p><i class="fa-solid fa-phone"></i></p>
+                  <p>+91-7386595869</p>
+                </div>
+                <div class="mobile">
+                  <p><i class="fa-solid fa-location-dot"></i></p>
+                  <p>Rayadurg, India.</p>
+                </div>
+                <div class="mobile">
+                  <p><i class="fa-solid fa-envelope"></i></p>
+                  <p>bandamanjunatha2002@gmail.com</p>
+                </div>               
+              </div>
+              <div class="contact-field">
+                  <div class="input-1"><input type="text" placeholder="Enter you name"></div>
+                  <div class="input-1"><input type="email"placeholder="Enter your email"></div>
+                  <div class="textarea">
+                  <textarea name="discription" cols="30" rows="10" placeholder="Enter you details "></textarea>
+                  </div>
+                  <div class="send">
+                    <input type="button" value="Send Me" class="button">
+                  </div>
+              </div>
+              
+          </div>
+        </div>
+        <!--   End of contact section  -->
+      </div>
+    </div>
+    <!--Content Ends-->
+    <!--Javascript Files.-->
+  </body>
+</html>

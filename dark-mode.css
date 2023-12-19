@@ -1,0 +1,83 @@
+/* Dark mode styles */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  --bg-black-900: #252121;
+  --bg-black-100: #262424;
+  --bg-black-50: #000000;
+  --text-black-900: #ffffff;
+  --text-black-700: #b3b3b3;
+  color: #ffffff;
+  --text-black-800: #ffffff;
+}
+
+/* Toggle switch styles */
+.dark-mode-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.dark-mode-switcher input {
+  display: none;
+}
+
+.dark-mode-switcher label {
+  cursor: pointer;
+  background-color: #f10000;
+  border-radius: 20px;
+  display: inline-block;
+  height: 26px;
+  position: relative;
+  width: 50px;
+}
+
+.dark-mode-switcher label::before {
+  background-color: #ffffff;
+  border-radius: 50%;
+  content: "";
+  height: 22px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  transition: 0.3s;
+  width: 22px;
+}
+
+.dark-mode-switcher input:checked + label::before {
+  left: 26px;
+}
+
+.dark-mode-switcher label::after {
+  background-color: #000000;
+  border-radius: 50%;
+  content: "";
+  height: 26px;
+  position: absolute;
+  top: 0;
+  transition: 0.3s;
+  width: 26px;
+}
+
+.dark-mode-switcher input:checked + label::after {
+  background-color: #ffffff;
+  right: 0;
+}
+/* For WebKit browsers (Chrome, Safari) */
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    /* Add your existing dark mode styles here */
+
+    /* Scrollbar styles */
+    scrollbar-color: #4a4a4a #333;
+    scrollbar-width: thin;
+  }
+
+  /* Adjust space between thumb and track */
+  ::-webkit-scrollbar-thumb {
+    margin: 20px; /* Adjust the margin to add space between thumb and track */
+  }
+}
