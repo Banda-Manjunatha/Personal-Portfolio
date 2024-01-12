@@ -82,5 +82,5 @@ Feel free to adjust the content and structure to fit your specific preferences a
 
 ## Thank You for Visiting and Best of Luck!
 
-Thank you for exploring my personal portfolio! Your interest is greatly appreciated. Best of luck with your endeavors!
+Thank you for exploring my personal portfolio project! Your interest is greatly appreciated. Best of luck with your endeavors!
 
