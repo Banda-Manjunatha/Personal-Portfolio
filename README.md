@@ -26,3 +26,24 @@ Key features implemented in the portfolio:
 - Projects section showcasing my work with project descriptions and live/demo links.
 - Contact information for potential collaboration or inquiries.
 
+
+## Contributing
+
+If you would like to contribute to the project, follow these steps:
+
+1. **Fork the project on GitHub.**
+2. **Create a new branch:**
+    ```bash
+    git checkout -b feature/awesome-feature
+    ```
+3. **Commit your changes:**
+    ```bash
+    git commit -am 'Add awesome feature'
+    ```
+4. **Push to the branch:**
+    ```bash
+    git push origin feature/awesome-feature
+    ```
+5. **Open a pull request on GitHub.**
+
+Feel free to adjust the content and structure to fit your specific preferences and details you want to showcase in your portfolio.
