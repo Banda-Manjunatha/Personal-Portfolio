@@ -79,3 +79,8 @@ If you would like to contribute to the project, follow these steps:
 5. **Open a pull request on GitHub.**
 
 Feel free to adjust the content and structure to fit your specific preferences and details you want to showcase in your portfolio.
+
+## Thank You for Visiting and Best of Luck!
+
+Thank you for exploring my personal portfolio! Your interest is greatly appreciated. Best of luck with your endeavors!
+
