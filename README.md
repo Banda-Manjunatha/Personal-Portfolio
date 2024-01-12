@@ -26,6 +26,38 @@ Key features implemented in the portfolio:
 - Projects section showcasing my work with project descriptions and live/demo links.
 - Contact information for potential collaboration or inquiries.
 
+# Installation
+
+Follow these steps to clone and set up the project locally:
+
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/Banda-Manjunatha/Personal-Portfolio.git
+    ```
+
+2. **Navigate to the project directory:**
+    ```bash
+    cd Personal-Portfolio
+    ```
+
+3. **Open index.html in your preferred browser:**
+    - Locate the `index.html` file in the project directory.
+    - Open it using your preferred web browser.
+
+
+## Usage
+
+To explore the Personal - Portfolio, follow these steps:
+
+1. **Open index.html in your preferred browser:**
+    - Navigate to the project directory.
+    - Locate the `index.html` file.
+    - Open it using your preferred web browser.
+
+2. **Explore the application:**
+    - Navigate through the replicated Portfolio interface.
+    - Experience the responsive design on different devices.
+
 
 ## Contributing
 
