@@ -78,7 +78,7 @@ If you would like to contribute to the project, follow these steps:
     ```
 5. **Open a pull request on GitHub.**
 
-Feel free to adjust the content and structure to fit your specific preferences and details you want to showcase in your portfolio.
+- Feel free to adjust the content and structure to fit your specific preferences and details you want to showcase in your portfolio.
 
 ## Thank You for Visiting and Best of Luck!
 
