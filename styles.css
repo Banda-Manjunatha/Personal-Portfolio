@@ -8,6 +8,9 @@
   font-family: "Fira Code";
   text-decoration: none;
 }
+body a {
+  text-decoration: none;
+}
 :root {
   --bg-black-900: #f2f2fc;
   --bg-black-100: #fdf9ff;
@@ -35,71 +38,53 @@ body {
 
 .section {
   background: var(--bg-black-50);
-  min-height: 100vh;
+  height: auto;
   display: block;
   padding-left: 40px;
   padding-right: 0;
   opacity: 1;
 }
-.main-content {
-  padding-left: 22%;
+.body {
+  display: flex;
 }
-
 .aside {
   width: 22%;
   background: var(--bg-black-100);
   position: fixed;
-  left: 0;
   padding: 30px;
   border-right: 1px solid var(--bg-black-50);
-  top: 0;
-  height: 100%;
+  height: 100%; /* Adjust as needed */
   z-index: 10;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+  gap: 5%;
+}
+.main-content {
+  width: 100%; /* Set the width to 78% */
+  margin-left: 22%;
 }
 .aside .logo {
-  position: absolute;
   top: 50px;
-  font-size: 30px;
   text-transform: capitalize;
 }
 .aside .logo a {
   color: var(--text-black-900);
   font-weight: 700;
-  padding: 15px 20px;
+  padding: 15px 0px;
   font-size: 25px;
   letter-spacing: 5px;
-  position: relative;
 }
 
 .aside .logo a span {
   font-family: "Sacramento", cursive;
   font-size: 40px;
   outline: none;
+  text-shadow: 4px 1px 5px var(--skin-color);
 }
 
-.aside .logo a::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-bottom: 5px solid var(--skin-color);
-  border-left: 5px solid var(--skin-color);
-  bottom: 0;
-  left: 0;
-}
-.aside .logo a::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-top: 5px solid var(--skin-color);
-  border-right: 5px solid var(--skin-color);
-  top: 0;
-  right: 0;
-}
+
 .aside .nav-toggler {
   height: 40px;
   width: 45px;
@@ -140,7 +125,8 @@ body {
   left: 0;
 }
 .aside .nav {
-  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .aside .nav li {
@@ -194,12 +180,13 @@ body {
   flex: 0 0 30%;
   max-width: 100%;
   text-align: center;
-  margin-left: 50px;
+  margin-left: 10px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;align-items: center;
 }
 .home .home-img img {
-  height: 300px;
-  flex: 0 0 40%;
-  max-width: 100%;
+  width: 200px;
   border-radius: 10px;
   box-shadow: 5px 5px 30px rgb(242, 87, 87);
   outline: none;
@@ -209,23 +196,14 @@ body {
   transform: scale(1.1);
 }
 .container {
-  max-width: 1155px;
-  width: 100%;
   margin: auto;
-}
-.padd-15 {
-  padding-left: 15px;
-  padding-right: 15px;
+  height: auto;
 }
 .row-1 {
   display: flex;
-  flex-wrap: wrap;
-  position: relative;
+  width: inherit;
 }
-.home .home-info {
-  flex: 0 0 60%;
-  max-width: 100%;
-}
+
 
 .home {
   margin: 0;
@@ -234,6 +212,7 @@ body {
 }
 h3.hello {
   font-size: 30px;
+  margin-top: 8%;
 }
 h3.hello span {
   font-family: "Sacramento", cursive;
@@ -256,18 +235,40 @@ h3.my-profession span {
   font-weight: bolder;
 }
 .home-info p {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   margin-top: 15px;
   font-size: 15px;
   color: var(--text-black-800);
 }
+.home-info i {
+  margin-right: 0.5rem;
+  color: rgb(121, 15, 179);
+  font-size: large;
+}
+.home-info a {
+  font-size: medium;
+  color: rgb(121, 15, 179);
+  font-weight: bold;
+  margin-right: 1rem;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid;
+  border-radius: 0.5rem;
+}
+.home-info a:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 5px rgb(121, 15, 179, 0.7);
+}
+.menu-icon {
+  font-size: large;
+  display: none;
+}
 .btn {
+  display: none;
   font-size: 15px;
   font-weight: 500;
   padding: 10px 30px;
   background: var(--skin-color);
   color: white;
-  display: inline-block;
   white-space: nowrap;
   border-radius: 30px;
   outline: none;
@@ -282,9 +283,7 @@ h3.my-profession span {
 }
 
 /*About section*/
-.education {
-  height: 100vh;
-}
+
 .row-2 {
   display: inline-block;
   justify-content: center;
@@ -343,41 +342,72 @@ h3.my-profession span {
 }
 
 /*  Skills Section  */
-
 .skill {
   font-size: 18px;
-  margin-left: 20px;
+  margin-left: 10px;
   line-height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skill-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 2%;
+  justify-content: space-between;
+  height: fit-content;
+}
+.skill-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 3rem;
+}
+.skill-cert {
+  width: 100%;
+  padding: 1rem;
+}
+.skill-cert h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.7rem;
 }
 
-.skill-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly; /* Adjust as needed */
-  width: 900px;
-  padding: 20px;
+.skill-cert ul li {
+  font-size: 1rem;
+  padding: 0.4rem 0;
+  line-height: 1.8rem;
 }
 .skill {
-  width: 30%; /* Adjust as needed */ /* Adjust margin for better spacing */
+  width: calc(30% - 20px); /* Adjust as needed */
   box-sizing: border-box;
   margin-top: 60px;
   text-align: center;
 }
+
 .skill i {
   font-size: 70px;
   color: var(--skin-color);
   transition: all 0.3s ease;
 }
+
 .skill i:hover {
-  transform: scale(1.5);
+  transform: scale(1.31);
 }
+
 .skill p {
   font-weight: bold;
   font-size: 20px;
   margin-top: 10px;
 }
+
 /*  Projects Section   */
 
+.projects{
+  height: auto; /* Allow the skills section to expand vertically */
+}
 .project-1 {
   margin-top: 50px;
   margin-left: 15px;
@@ -389,6 +419,16 @@ h3.my-profession span {
   font-weight: bold;
   margin-bottom: 10px;
 }
+.project-1 ul li a i {
+  margin-right: 0.2rem;
+}
+
+.project-1 ul li a i,
+.project-1 ul li a {
+  font-size: medium;
+  margin-left: 0.5rem;
+  color: #3366cc;
+}
 .project-1 p {
   font-size: 15px;
 }
@@ -398,9 +438,7 @@ h3.my-profession span {
   font-size: larger;
 }
 .project-2 {
-  margin-top: 30px;
-  margin-left: 15px;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 .project-2 ul li {
   font-size: large;
@@ -410,16 +448,30 @@ h3.my-profession span {
 .project-2 p {
   font-size: 15px;
 }
+.project-2 ul li a i,
+.project-2 ul li a {
+  font-size: medium;
+  margin-left: 0.5rem;
+  color: #3366cc;
+}
+.project-2 ul li a i {
+  margin-right: 0.2rem;
+}
+
+.row-4{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding-bottom: 1rem;
+}
 .addres {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%;
-  margin-top: 30px;
-  font-weight: bold;
+  margin-top: 4%;
 }
 .mobile {
-  width: 25%;
+  width: 30%;
   text-align: center;
 }
 .mobile i {
@@ -430,8 +482,8 @@ h3.my-profession span {
 .mobile i:hover {
   transform: scale(1.5);
 }
-.input-1 input {
-  width: 50%;
+.input-1 {
+  width: 80%;
   height: 50px;
   border-radius: 10px;
   background: var(--bg-black-100);
@@ -442,13 +494,13 @@ h3.my-profession span {
   border: none;
   margin-top: 20px;
 }
-.input-1 input:focus {
+.input-1:focus {
   box-shadow: 0 0 40px rgba(16, 15, 15, 0.15);
 }
 
-.textarea textarea {
-  width: 60%;
-  height: 200px;
+.textarea {
+  width: 80%;
+  height: 150px;
   border-radius: 10px;
   margin-top: 20px;
   border: none;
@@ -461,11 +513,11 @@ h3.my-profession span {
 .textarea textarea:focus {
   box-shadow: 0 0 40px rgba(16, 15, 15, 0.15);
 }
-.button {
+.submit {
   background: var(--skin-color);
   border: none;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 40px;
   text-decoration: none;
   height: 40px;
   margin: 0;
@@ -473,75 +525,10 @@ h3.my-profession span {
   border-radius: 30px;
   transition: all 0.5s ease-out;
 }
-.button:hover {
+.submit:hover {
   transform: scale(1.1);
 }
-/* Styles for desktops */
-@media only screen and (min-width: 1201px) {
-  .main-content {
-    padding-left: 22%;
-  }
-  .aside {
-    height: 100vh;
-  }
-}
 
-/* Styles for laptops */
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .main-content {
-    padding-left: 22%;
-  }
-  .aside {
-    width: 22%;
-  }
-}
+ /* Responsive styles for Desktops */
 
-/* Styles for tablets in portrait */
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-  .main-content {
-    padding-left: -22%;
-  }
-  .aside {
-    width: 22%;
-  }
-}
 
-/* Styles for tablets in landscape */
-@media only screen and (min-width: 769px) and (max-width: 991px) {
-  .main-content {
-    padding-left: -22%;
-  }
-  .aside {
-    width: 22%;
-  }
-}
-
-/* Styles for phones */
-@media only screen and (max-width: 576px) {
-  .main-content {
-    padding-left: 5%;
-  }
-  .aside {
-    width: 100%;
-    position: static;
-    border-right: none;
-    padding: 20px;
-    text-align: center;
-  }
-  .aside .nav-toggler {
-    display: block;
-  }
-  .aside .nav {
-    margin-top: 20px;
-    text-align: center;
-  }
-  .nav li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-}
-
-/* Styles for phones in landscape */
-@media only screen and (min-width: 577px) and (max-width: 767px) {
-  /* Adjust styles as needed */
-}
