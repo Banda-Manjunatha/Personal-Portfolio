@@ -216,9 +216,9 @@
   .home .home-img img {
     width: 140px;
     position: absolute;
-    top: 50%;
+    top: 30%;
     z-index: 1;
-    opacity: .5;
+    opacity: .7;
   }
   footer{
     font-size: 12px;
