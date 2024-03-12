@@ -78,6 +78,7 @@ body {
 
   /* Adjust space between thumb and track */
   ::-webkit-scrollbar-thumb {
-    margin: 20px; /* Adjust the margin to add space between thumb and track */
+    margin: 20px;
+     /* Adjust the margin to add space between thumb and track */
   }
 }

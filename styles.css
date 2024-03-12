@@ -57,9 +57,7 @@ body {
   z-index: 10;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-evenly;
-  gap: 5%;
 }
 .main-content {
   width: 100%; /* Set the width to 78% */
@@ -173,7 +171,7 @@ body {
   cursor: pointer;
 }
 .aside .nav li button:focus {
-  transform: scale(1.2);
+  transform: scale(1.17);
 }
 /* Home Section Starts */
 .home .home-img {
@@ -245,42 +243,36 @@ h3.my-profession span {
   color: rgb(121, 15, 179);
   font-size: large;
 }
-.home-info a {
-  font-size: medium;
-  color: rgb(121, 15, 179);
-  font-weight: bold;
-  margin-right: 1rem;
-  padding: 0.3rem 0.5rem;
-  border: 1px solid;
-  border-radius: 0.5rem;
+.home-info button{
+  margin-bottom: 3%;
+  background-color: var(--skin-color);
+  color: white;
 }
-.home-info a:hover {
-  cursor: pointer;
-  box-shadow: 3px 3px 5px rgb(121, 15, 179, 0.7);
+.btn{
+  font-size: 15px;
+  padding: 10px 30px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease;
+  margin-right: 1rem;
+  color: white;
+}
+.btn i{
+  margin-right: 10px;
+}
+.btn:hover{
+  transform: scale(1.12);
 }
 .menu-icon {
   font-size: large;
   display: none;
 }
-.btn {
-  display: none;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 10px 30px;
-  background: var(--skin-color);
-  color: white;
-  white-space: nowrap;
-  border-radius: 30px;
-  outline: none;
+
+.social-btn{
+  background: #3366cc;
 }
-.home-info button {
-  border: none;
-  background-color: transparent;
-  transition: all 0.3s ease;
-}
-.home-info button:hover {
-  transform: scale(1.1);
-}
+
 
 /*About section*/
 
