@@ -150,6 +150,13 @@
   }
 }
 @media (max-width:500px) {
+  .home, .education, .skills, .contact, .projects{
+    margin-top: 12%;
+    border-radius: 20px;
+  }
+  .container .hello{
+    margin-top: 3%;
+  }
   .home-info p{
     font-size: 11px;
   }
@@ -169,7 +176,7 @@
     width: 80%;
   }
   .textarea{
-    font-size: 13px;
+    font-size: 11px;
     height: 110px;
     width: 80%;
   }
@@ -179,9 +186,6 @@
   .skill-cert h2{
     font-size: 19px;
   }
-  .section{
-    padding: 20px;
-  }
   .project-1 p, .project-2 p{
     font-size: 11px;
   }
@@ -190,6 +194,7 @@
     font-size: 11px;
   }
   .titile h2{
+    padding-top: 10px;
     font-size: 25px;
   }
   .skill-container{
@@ -210,15 +215,17 @@
     font-size: 11px;
   }
   .home-info {
-    position: relative;
+    /*position: relative;*/
     z-index: 10;
   }
   .home .home-img img {
-    width: 140px;
-    position: absolute;
-    top: 30%;
+    height: 150px;
+    width: fit-content;
+      /*position: absolute;
+  top: 30%;*/
     z-index: 1;
-    opacity: .7;
+    opacity: .9;
+    border-radius: 90%;
   }
   footer{
     font-size: 12px;
@@ -232,7 +239,7 @@
   }
   .row-1{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   h3.my-profession{
     font-size: .8rem;
