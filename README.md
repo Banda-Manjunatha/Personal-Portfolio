@@ -2,6 +2,12 @@
 
 Welcome to my personal portfolio project! This web application showcases my skills, projects, and information about me. The portfolio is built using HTML, CSS, and JavaScript.
 
+## Live Showcase
+
+To explore my Portfolio online, simply visit the following link:
+
+[Amazon Clone Live Showcase](https://manjunath-portfolio.netlify.app/)
+
 ## Table of Contents
 - [Description](#description)
 - [Technologies Used](#technologies-used)
