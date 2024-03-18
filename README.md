@@ -6,7 +6,7 @@ Welcome to my personal portfolio project! This web application showcases my skil
 
 To explore my Portfolio online, simply visit the following link:
 
-[Amazon Clone Live Showcase](https://manjunath-portfolio.netlify.app/)
+[Portfolio Live Link](https://manjunath-portfolio.netlify.app/)
 
 ## Table of Contents
 - [Description](#description)
