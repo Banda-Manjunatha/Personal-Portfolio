@@ -7,7 +7,7 @@
     <link rel="icon" href="./images/favicon.ico.png" type="image/x-icon">
     <!--CSS Files-->
     <link rel="stylesheet" href="styles.css" />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="colors.css" />
     <link
       rel="stylesheet"
@@ -42,9 +42,9 @@
     </nav>
     <div class="main-content">
       <!-- Start Home Section   -->
-      <div class="home section" id="home">
+      <div class="home section" id="home" data-aos="zoom-in"> 
         <div class="container">
-          <h3 class="hello hidden">
+          <h3 class="hello hidden animate-on-scroll">
             Hi! I'm <span> Manjunatha Banda</span>
           </h3>
           <h3 class="my-profession hidden">
@@ -73,7 +73,7 @@
       </div>
       <!-- End of Home Section -->        
       <!--  Education section starts  -->
-      <div class="section education" id="education">
+      <div class="section education" id="education" data-aos="fade-up-right">
         <div class="container">
           <div class="row-2">
             <div class="titile">
@@ -113,7 +113,7 @@
       </div>
       <!--   End of education.  -->
       <!--   Skill section starts  -->
-      <div class="section skills" id="skills">
+      <div class="section skills" id="skills" data-aos="zoom-in-right">
         <div class="container">          
           <div class="row-2">
             <div class="titile">
@@ -146,7 +146,7 @@
       </div>
       <!--   End of Skill section  .-->
       <!--  Projects section starts -->
-      <div class="section projects" id="projects">
+      <div class="section projects" id="projects" data-aos="zoom-in-up">
         <div class="container">
           
           <div class="row-2">
@@ -203,7 +203,7 @@
       </div>
       <!--  End of project section  -->
       <!--  Contact section starts  -->
-      <div class="section contact" id="contact">
+      <div class="section contact" id="contact" data-aos="zoom-in-up">
         <div class="lastContainer">
           <div class="row-4">
             <div class="titile">
@@ -246,36 +246,11 @@
     <!--Content Ends-->
     <!--Javascript Files.-->
     <!-- JavaScript for dark mode switcher -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-  const darkModeToggle = document.getElementById('dark-mode-toggle');
-  const body = document.body;
-
-  darkModeToggle.addEventListener('change', function () {
-    if (darkModeToggle.checked) {
-      body.classList.add('dark-mode');
-    } else {
-      body.classList.remove('dark-mode');
-    }
-  });
-});
-
-
-  const observer = new IntersectionObserver((entries)=>{
-    entries.forEach((entry)=>{
-      console.log(entry);
-      if(entry.isIntersecting){
-        entry.target.classList.add('show');
-      }
-      else {
-        entry.target.classList.remove('show');
-      }
-    })
-  })
-
-  const hideelement = document.querySelectorAll('.hidden');
-  hideelement.forEach((el)=>{observer.observe(el)});
-
+  AOS.init();
+</script>
+<script>
   document.addEventListener('DOMContentLoaded', function () {
         const navLinks = document.querySelectorAll('.nav a');
         const homeButton = document.querySelector('.hire');

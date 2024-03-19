@@ -173,12 +173,12 @@
     font-size: 11px;
     height: auto;
     padding: 10px 20px;
-    width: 80%;
+    width: 100%;
   }
   .textarea{
     font-size: 11px;
     height: 110px;
-    width: 80%;
+    width: 100%;
   }
   .skill-cert ul li {
     font-size: 13px;
@@ -191,7 +191,10 @@
   }
   .mobile p{
     word-wrap: break-word;
-    font-size: 11px;
+    font-size: 8px;
+  }
+  .mobile i{
+    font-size: 14px;
   }
   .titile h2{
     padding-top: 10px;
@@ -221,8 +224,6 @@
   .home .home-img img {
     height: 150px;
     width: fit-content;
-      /*position: absolute;
-  top: 30%;*/
     z-index: 1;
     opacity: .9;
     border-radius: 90%;
@@ -230,10 +231,6 @@
   footer{
     font-size: 12px;
   }    
-  .dark-mode-switcher label{
-    height: 15px;
-    width: 30px;
-  }
   .social-link{
     width: 100%;
   }
@@ -260,5 +257,13 @@
   .btn{
     font-size: 11px;
     padding: 8px 20px;
+  }
+  .home{
+    margin-top: 16%;
+  }
+  .nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 0;
   }
 }
