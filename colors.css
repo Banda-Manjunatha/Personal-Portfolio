@@ -34,7 +34,11 @@
   .home .home-img img{
     width: 150px;
   }
+  .home{
+    margin-top: 4%;
+  }
   h3.hello {
+    margin-top: 0;
     font-size: 25px;
   }
   h3.hello span{
@@ -82,13 +86,16 @@
     z-index: 3;
   }
   .container .hello{
-    margin-top: 10%;
+    margin-top: 0;
   }
   .home-info p{
     font-size: 13px;
   }
   .degree ul li{
     font-size: 16px;
+  }
+  .home{
+    margin-top: 5%;
   }
   .degree p {
     font-size: 13px;
